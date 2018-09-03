@@ -25,6 +25,7 @@ func (this *WechatPay) Pay(param UnitOrder) (*UnifyOrderResult, error) {
 	m["total_fee"] = param.TotalFee
 	m["out_trade_no"] = param.OutTradeNo
 	m["nonce_str"] = param.NonceStr
+	m["attach"] = param.Attach
 	if param.TradeType == "MWEB" {
 		m["scene_info"] = param.SceneInfo
 	}

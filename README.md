@@ -4,7 +4,7 @@
 
 ## 安装
 
-`go get -u github.com/liyoung1992/wechatpay`
+`go get -u github.com/vlyonline/wechatpay`
 
 ## 帮助
 如果在集成过程中遇到问题，请联系：liyoung_1992@163.com
@@ -64,6 +64,8 @@
 	result ,err:= wechat_client.Pay(pay_data)
 
 ```
+#### 修改内容： 在统一下单结构体 UnitOrder 内加入Attach 自定义参数
+
 APP支付、公众号支付、小程序支付都是先返回：预支付交易单，然后用预支付交易码在进行支付操作；
 小程序和公众号支付都需要获取用户的openid。具体的获取方式:[获取openid](https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=4_4)
 

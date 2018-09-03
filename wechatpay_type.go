@@ -24,6 +24,7 @@ type UnitOrder struct {
 	OutTradeNo     string `xml:"out_trade_no"`
 	SceneInfo      string `xml:"scene_info"`
 	Openid         string `xml:"openid"`
+	Attach         string `xml:"attach"`
 	Referer        string
 }
 
